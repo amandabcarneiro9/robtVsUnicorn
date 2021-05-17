@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .conversation {
+        width: 360px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .message {
+        display: flex;
+        margin-bottom: 10px;
+        width: 200px;
+      }
+      .message div {
+        width: 200px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .message--remote {
+        flex-direction: row;
+      }
+      .message--remote div {
+        background-color: blue;
+        color: white;
+      }
+
+      .message--local {
+        flex-direction: row-reverse;
+        align-self: flex-end;
+      }
+
+      .message--local div {
+        background-color: lightgray;
+      }
+      .message img {
+        width: 48px;
+        height: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conversation"></div>
+    <script src="./chat.js"></script>
+  </body>
+</html>
